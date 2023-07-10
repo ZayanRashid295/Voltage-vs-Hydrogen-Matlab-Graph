@@ -1,0 +1,23 @@
+This MATLAB code calculates and plots the voltage vs. hydrogen production rate curves for three different electrode materials (stainless steel, titanium paper, and nickel foam) in an alkaline electrolysis system. Here's an explanation of the code:
+
+Electrode area and thickness: The code defines the electrode areas (A_ss, A_ti, A_nf) in cm^2 and the electrode thicknesses (t_ss, t_ti, t_nf) in cm for each electrode material.
+
+Electrolyte properties: The code specifies the concentration of KOH (KOH_conc) in wt.% and the density of KOH electrolyte (rho_KOH) in g/cm^3.
+
+Electrode properties: The code provides the densities of the electrode materials (rho_ss, rho_ti, rho_nf) in g/cm^3.
+
+Faraday's constant: The code assigns the value of Faraday's constant (F) in Coulombs per mole of electrons.
+
+Current density range: The code defines the minimum (j_min) and maximum (j_max) current densities in A/cm^2 and the step size (delta_j) for generating a range of current densities (j).
+
+Voltage and hydrogen production rate calculation: Using the current densities, the code calculates the voltage (V_ss, V_ti, V_nf) and hydrogen production rate (n_ss, n_ti, n_nf) for each electrode material. The voltage is determined using specific equations based on the current densities and electrode properties. The hydrogen production rate is calculated using the equation: n = j * 1000 * t * 3600 / (2 * F), where n is the hydrogen production rate in mol/hr, j is the current density in A/cm^2, t is the electrode thickness in cm, and F is Faraday's constant.
+
+Plotting: The code plots the voltage vs. hydrogen production rate curves for each electrode material using the plot function. The curves are represented by red (V_ss, n_ss), blue (V_ti, n_ti), and green (V_nf, n_nf) lines. The x-axis represents the voltage values, and the y-axis represents the hydrogen production rate values. The plot includes axis labels, a legend, and a title.
+
+Grid: The code adds a grid to the plot using the grid on statement.
+
+The resulting plot shows the relationship between voltage and hydrogen production rate for each electrode material in an alkaline electrolysis system. It provides insights into the performance of different electrode materials in terms of hydrogen production at different voltages.
+
+
+
+
